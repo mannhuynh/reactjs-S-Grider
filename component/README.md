@@ -1,3 +1,20 @@
+# This lesson is about components
+
+## Tech included:
+
+-   sementic ui @ https://semantic-ui.com
+-   js faker @ https://github.com/marak/Faker.js/
+
+#### Install JS Faker:
+
+    npm install --save faker
+
+    import faker from 'faker'
+
+    <img src={faker.image.avatar()} alt="avatar" />
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

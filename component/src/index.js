@@ -1,8 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import CommentDetail from "./CommentDetail";
 
 const App = () => {
-	return <h1>Hi there</h1>;
+	return <CommentDetail />;
 };
 
 ReactDOM.render(<App />, document.querySelector("#root"));
