@@ -1,6 +1,8 @@
 // import React from "react";
 // import faker from "faker";
 
+// import ApprovalCard from "./ApprovalCard";
+
 const CommentDetail = (props) => {
 	return (
 		<div className="ui container comments">
@@ -18,6 +20,7 @@ const CommentDetail = (props) => {
 					<div className="text">{props.comment}</div>
 				</div>
 			</div>
+			{/* <ApprovalCard /> */}
 		</div>
 	);
 };
