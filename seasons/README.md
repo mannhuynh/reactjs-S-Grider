@@ -1,3 +1,15 @@
+# Season Display App
+
+### This App will display the current season of people are in from everywhere in the world.
+
+### Tech used:
+
+-   Reactjs: https://reactjs.org/
+-   Semantic UI: https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css
+-   Geolocation API: https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
