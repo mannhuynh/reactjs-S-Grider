@@ -1,14 +1,33 @@
+/* eslint-disable no-useless-constructor */
 import React from "react";
 import ReactDOM from "react-dom";
 // import SeasonDisPlay from "./SeasonDisplay";
 
 class App extends React.Component {
-	render() {
+	constructor(props) {
+		super(props);
+		// This is our state initialization
+		this.state = { lat: null, errorMessage: "" };
+
 		window.navigator.geolocation.getCurrentPosition(
-			(position) => console.log(position),
-			(err) => console.log(err)
+			(position) => {
+				// Using setState to update the initial state
+				this.setState({ lat: position.coords.latitude });
+			},
+			(err) => {
+				this.setState({ errorMessage: err.message });
+			}
 		);
-		return <div>Latitude: </div>;
+	}
+	// render() is a required method for React Class base component
+	render() {
+		if (this.state.errorMessage && !this.state.lat) {
+			return <div>Error: {this.state.errorMessage}</div>;
+		}
+		if (!this.state.errorMessage && this.state.lat) {
+			return <div>Latitude: {this.state.lat}</div>;
+		}
+		return <div>Loading...</div>;
 	}
 }
 
