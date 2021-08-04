@@ -32,14 +32,27 @@
 	right: 10px;
 }
 
-.season-display.winter h1 {
+.season-display.winter .text-clock {
 	color: #3d9cf5;
 }
 
-.season-display.summer h1 {
+.season-display.summer .text-clock {
 	color: #f86262;
 }
 
+.text-clock {
+	font-size: 24px;
+	font-weight: bold;
+	display: grid;
+	grid-template-rows: repeat(2, 1fr);
+	align-items: center;
+	justify-items: center;
+}
+h1 {
+	font-size: 48px;
+	justify-self: center;
+	align-self: center;
+}
 /* .display {
 	display: grid;
 	grid-template-rows: repeat(3, 1fr);

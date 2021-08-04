@@ -6,13 +6,13 @@ import SeasonDisPlay from "./SeasonDisplay";
 import Spinner from "./Spinner";
 
 class App extends React.Component {
-	constructor(props) {
-		super(props);
-		// This is our state initialization
-		this.state = { lat: null, errorMessage: "" };
-	}
+	// constructor(props) {
+	// 	super(props);
+	// 	// This is our state initialization
+	// 	this.state = { lat: null, errorMessage: "" };
+	// }
 	// We can ignore the constructor() method and use below statement:
-	// state = {lat:null, errorMessage:""}
+	state = { lat: null, errorMessage: "" };
 
 	componentDidMount() {
 		window.navigator.geolocation.getCurrentPosition(

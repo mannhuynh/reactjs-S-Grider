@@ -1,4 +1,5 @@
 import "./SeasonDisplay.css";
+import Clock from "./Clock";
 
 const seasonConfig = {
 	summer: { text: "Let's go to the beachhhhh!!!!", iconName: "sun" },
@@ -21,7 +22,12 @@ const SeasonDisPlay = (props) => {
 	return (
 		<div className={`season-display ${season}`}>
 			<i className={`${iconName} icon massive icon-left`}></i>
-			<h1>{text}</h1>
+			<div className="text-clock">
+				<h1>{text}</h1>
+				<div>
+					<Clock />
+				</div>
+			</div>
 			<i className={`${iconName} icon massive icon-right`}></i>
 		</div>
 	);
