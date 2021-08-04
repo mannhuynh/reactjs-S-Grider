@@ -1,9 +1,13 @@
 # This app get input from user and search matched pictures
 
+## NOTE:
 
+#### Remember this code for all `<form>` to avoid default behavior:
 
+    onSubmit={(e) => e.preventDefault()}
 
--------------
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
