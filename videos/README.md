@@ -1,3 +1,10 @@
+# This is a Video App using Youtube API
+
+### Techs:
+
+-   Youtube API: https://developers.google.com/youtube/v3/docs/search/list
+-   Axios: ` npm install --save axios`
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
