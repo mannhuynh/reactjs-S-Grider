@@ -27,6 +27,7 @@ class PasswordValidator extends React.Component {
 						? "Password must be at least 4 characters"
 						: ""}
 				</form>
+				{/* <h4>{this.state.password}</h4> */}
 			</div>
 		);
 	}

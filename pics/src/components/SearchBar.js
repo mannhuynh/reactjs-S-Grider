@@ -3,11 +3,16 @@ import React from "react";
 class SearchBar extends React.Component {
 	state = { term: "" };
 
+	onFormSubmit = (event) => {
+		event.preventDefault();
+		this.props.handleSearch(this.state.term);
+	};
+
 	render() {
 		return (
 			<div className="ui segment">
 				<form
-					onSubmit={(e) => e.preventDefault()}
+					onSubmit={this.onFormSubmit}
 					className="ui form"
 					action=""
 				>

@@ -1,10 +1,15 @@
 # This app get input from user and search matched pictures
 
+## Tools:
+
+-   Unsplash API: www.unsplash.com/developers
+-   Axios: `npm install --save asios`
+
 ## NOTE:
 
 #### Remember this code for all `<form>` to avoid default behavior:
 
-    onSubmit={(e) => e.preventDefault()}
+    event.preventDefault();
 
 ---
 
