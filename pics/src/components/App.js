@@ -2,6 +2,7 @@ import React from "react";
 import SearchBar from "./SearchBar";
 import PassWord from "./Password";
 import unsplash from "../api/unsplash";
+import ImageList from "./ImageList";
 
 class App extends React.Component {
 	state = { images: [] };
@@ -20,7 +21,8 @@ class App extends React.Component {
 				<PassWord />
 				<h2>Pictures Search App</h2>
 				<SearchBar handleSearch={this.onSearchSubmit} />
-				<p>{this.state.images.length}</p>
+
+				<ImageList sourceImages={this.state.images} />
 			</div>
 		);
 	}
