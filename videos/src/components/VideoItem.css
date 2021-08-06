@@ -2,7 +2,7 @@
 	display: flex !important;
 	align-items: center !important;
 	cursor: pointer;
-	gap: 10px;
+	/* gap: 10px; */
 }
 
 .video-item.item img {
