@@ -1,26 +1,57 @@
-// import Accordion from "./components/Accordion";
-import Search from "./components/Search";
+import React, { useState, useEffect } from "react";
 
-const items = [
+// import Accordion from "./components/Accordion";
+import Dropdown from "./components/Dropdown";
+// import Search from "./components/Search";
+
+// const items = [
+// 	{
+// 		title: "What is React?",
+// 		content: "React is a LIBRARY",
+// 	},
+// 	{
+// 		title: "Why is React?",
+// 		content: "React is such",
+// 	},
+// 	{
+// 		title: "How do you use React?",
+// 		content: "React is all about components",
+// 	},
+// ];
+
+const options = [
 	{
-		title: "What is React?",
-		content: "React is a LIBRARY",
+		label: "The Color Red",
+		value: "red",
 	},
 	{
-		title: "Why is React?",
-		content: "React is such",
+		label: "The Color Green",
+		value: "green",
 	},
 	{
-		title: "How do you use React?",
-		content: "React is all about components",
+		label: "The Shade of Blue",
+		value: "blue",
 	},
 ];
 
 const App = () => {
+	const [selected, setSelected] = useState(options[0]);
+	const [showDropdown, setShowDropdown] = useState(true);
+
 	return (
 		<div>
 			{/* <Accordion items={items} /> */}
-			<Search />
+			{/* <Search /> */}
+			<button onClick={() => setShowDropdown(!showDropdown)}>
+				Dropdown Toggle
+			</button>
+			{showDropdown ? (
+				<Dropdown
+					selected={selected}
+					onSelectedChange={setSelected}
+					options={options}
+				/>
+			) : null}
 		</div>
 	);
 };
