@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import FetchUsers from "./components/FetchUsers";
 
 // import Accordion from "./components/Accordion";
 // import Dropdown from "./components/Dropdown";
@@ -53,6 +54,7 @@ const App = () => {
 				/>
 			) : null} */}
 			<Translate />
+			<FetchUsers />
 		</div>
 	);
 };
