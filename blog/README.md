@@ -10,13 +10,20 @@
 
 ### App Structure:
 
-blog/
---src/
-----index.js
-----components/
-------App.js
-----reducers/
-------index.js
+    ./blog/
+    |
+    |--src/
+    |   |--index.js
+    |
+    |--components/
+    |   |--App.js
+    |   |--PostList.js
+    |
+    |--reducers/
+    |   |--index.js
+    |
+    |--actions/
+    |   |--index.js
 
 # Getting Started with Create React App
 
